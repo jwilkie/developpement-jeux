@@ -5,7 +5,6 @@ import ColoredBox from "@/components/ColoredBox";
 import { DownloadBlock, File as DownloadFile } from "@/components/DownloadBlock";
 import IC from "@/components/InlineCode";
 import OverflowContainer from "@/components/OverflowContainer";
-import { Code, WebExample } from "@/components/WebExample";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import { FileExplorer, Folder, File } from "@/components/FileExplorer";
 import Spoiler from "@/components/Spoiler";
@@ -24,66 +23,12 @@ export const metadata = {
     group: "labs"
 }
 
-const js =
-    `let chaine = 'Une chaine';
-let tab = [];
-
-let i = 0;
-for(const char in chaine) {
-    tab.push(char);
-    i++;
-}
-
-console.log(\`Taille du tableau: \${i}\`)`;
-
-const css =
-    `html {
-    box-sizing: border-box;
-}`;
-
-const html =
-    `<html>
-    <head>
-        <title>Test</title>
-    </head>
-    <body>
-        <h1>Test</h1>
-    </body>
-</html>`
-
-const exempleHTML1 =
-    `<input type="button" value="Changer de couleur" id="couleur">`;
-
-const exempleHTML2 =
-    `<div class="container">
-    <div class="box"></div>
-</div>`;
-
-const exempleCSS =
-    `.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10rem;
-}
-
-.box {
-    width: 5rem;
-    height: 5rem;
-    background-color: #a00;
-    transition: 1s;
-}
-
-.box:hover {
-    transform: rotate(190deg);
-}`;
-
-const exempleJS =
-    `let bouton = document.getElementById('couleur');
-let box = document.querySelector('.box');
-bouton.addEventListener('click', () => {
-    box.style.backgroundColor = '#00a';
-});`;
+const exempleGD =
+`func _process(delta: float) -> void:
+	# This is a comment
+	direction = Input.get_vector("gauche", "droite", "haut", "bas")
+	vitesse = lerp(vitesse, direction * max_vitesse, 1 - exp(-acceleration * delta))
+	position += vitesse * delta`;
 
 export default function Page() {
     return <>
@@ -135,35 +80,9 @@ export default function Page() {
             <p>
                 Du code inline dans un <IC>paragraphe</IC> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae atque nihil <IC>corporis</IC> ea qui? At similique dolorem quo eos laboriosam, iste id rerum suscipit culpa voluptatum ut maiores illo nihil.
             </p>
-            <CodeBlock language="html">
-                {html}
+            <CodeBlock language="gd">
+                {exempleGD}
             </CodeBlock>
-            <CodeBlock language="css">
-                {css}
-            </CodeBlock>
-            <CodeBlock language="js">
-                {js}
-            </CodeBlock>
-            <CodeBlock language="Texte">
-                {'Texte sans highlight'}
-            </CodeBlock>
-            <CodeBlock language="csharp">
-                {'const int TEST = 2;'}
-            </CodeBlock>
-        </section>
-
-        <section>
-            <h2>Web Example</h2>
-            <WebExample title="Transition">
-                <Code language="html">{exempleHTML1}</Code>
-                <Code language="html">{exempleHTML2}</Code>
-                <Code language="css">{exempleCSS}</Code>
-                <Code language="js" display={false}>{exempleJS}</Code>
-            </WebExample>
-            <WebExample title="Small">
-                <Code language="html" display={false}>{'<div class="box">Allo</div>'}</Code>
-                <Code language="css" display={false}>{'.box{background-color:#333;color:#fff}'}</Code>
-            </WebExample>
         </section>
 
         <section>
@@ -349,8 +268,8 @@ export default function Page() {
             </Spoiler>
 
             <Spoiler label="Spoiler" border={false}>
-                <CodeBlock language="html">
-                    {html}
+                <CodeBlock language="gd">
+                    {exempleGD}
                 </CodeBlock>
             </Spoiler>
         </section>

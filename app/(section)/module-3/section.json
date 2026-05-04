@@ -1,9 +1,8 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Titre de module",
+    "title": "Module 3",
     "description": "Description de module",
-    "disabled": true,
     "pages": [
-
+        
     ]
 }

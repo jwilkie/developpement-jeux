@@ -21,7 +21,6 @@ export default async function Home() {
         <div className={styles.text}>
             {appConfig.description}
         </div>
-
         <ul className={styles.list}>
             { sections.map((section, index) => (
                 <li key={index} className={(section.disabled ? styles.disabled : '')}>

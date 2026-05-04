@@ -1,5 +1,8 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Titre de module",
-    "description": "Description de module"
+    "title": "Module 2",
+    "description": "Description de module",
+    "pages": [
+        
+    ]
 }

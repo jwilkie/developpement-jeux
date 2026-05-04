@@ -1,0 +1,6 @@
+{ 
+    "$schema": "../../../model/group.schema.json",
+    "label": "Ressources",
+    "title": "Ressources",
+    "description": "Des liens vers des ressources externes pouvant être utilisé pour vous jeux."
+}
