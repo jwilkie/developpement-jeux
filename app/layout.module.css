@@ -1,0 +1,18 @@
+.layout {
+    --aside-width: 15rem;
+    --main-padding: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Prevent grid overflow 
+       https://css-tricks.com/preventing-a-grid-blowout/ */
+    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 100vh;
+    position: relative;
+}
+
+@media (min-width: 960px){
+    .layout {
+        grid-template-columns: var(--aside-width) 1fr;
+    }
+}

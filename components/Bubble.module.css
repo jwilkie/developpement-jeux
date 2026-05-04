@@ -1,0 +1,39 @@
+.bubble {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 5.6em;
+    height: 5.6em;
+    background-color: var(--bubble-bg-color);
+    border-radius: 50%;
+    font-family: var(--font-montserrat);
+    color: var(--bubble-text-color);
+}
+
+.name {
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+
+.number {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+@media (min-width: 640px){
+    .name {
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-left: 0;
+    }
+    
+    .number {
+        font-size: 1.8rem;
+        padding-left: 0;
+    }
+}

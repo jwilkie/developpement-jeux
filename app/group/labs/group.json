@@ -1,0 +1,6 @@
+{ 
+    "$schema": "../../../model/group.schema.json",
+    "label": "Laboratoires",
+    "title": "Laboratoires",
+    "description": "Des liens vers chaque page de laboratoires de ce site."
+}

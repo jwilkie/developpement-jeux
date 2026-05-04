@@ -1,0 +1,52 @@
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: var(--aside-text-color)
+}
+
+.section-list > li {
+    padding: 0.5rem 1.5rem;
+    border-bottom: 2px solid var(--aside-list-border-color);
+}
+
+.section-list > li > a {
+    font-weight: bold;
+}
+
+.nav ul .group-list {
+    padding-left: 1em;
+    border-left: 2px solid var(--aside-list-border-color);
+}
+
+.group-list > li > span.active {
+    font-weight: bold;
+}
+
+.nav ul .page-list {
+    padding-left: 1em;
+    border-left: 2px solid var(--aside-list-border-color);
+}
+
+.page-list > li {
+    padding: 0.3rem 0;
+}
+
+.page-list > li > a {
+    font-size: 0.85em;
+}
+
+.page-list > li > a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.page-list > li > a:hover {
+    text-decoration: underline;
+}
+
+.disabled {
+    font-weight: bold;
+    opacity: .5;
+    cursor: not-allowed;
+}

@@ -1,0 +1,27 @@
+.spoiler {
+    margin: 1rem 0;
+}
+
+.button {
+    background-color: var(--spoiler-button-shown-color);
+    color: var(--text-inverted-color);
+    border: none;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color .3s;
+}
+
+.button.hidden {
+    background-color: var(--spoiler-button-color);
+}
+
+.container {
+    padding: .5rem;
+    border: 2px solid var(--spoiler-button-shown-color);
+}
+
+.container.no-border {
+    padding: 0;
+    border: none;
+}

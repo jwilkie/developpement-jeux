@@ -1,0 +1,87 @@
+.search {
+    display: flex;
+    position: relative;
+}
+
+.search button {
+    padding: 0;
+    margin-right: .5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search button:disabled {
+    cursor: auto;
+}
+
+.search button svg {
+    width: 2.2rem;
+}
+
+.search input[type=search] {
+    flex: 1;
+    width: 100%;
+    padding: 0 1em;
+    background-color: var(--search-input-bg-color);
+    border: none;
+    border-radius: 18px 0 0 18px;
+    z-index: 20;
+}
+
+.search input[type=submit] {
+    width: 6rem;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 0 18px 18px 0;
+    background-color: var(--search-submit-bg-color);
+    color: var(--search-submit-text-color);
+    cursor: pointer;
+    z-index: 10;
+}
+
+@media(min-width: 640px){
+    .search button {
+        margin-right: 0;
+    }
+
+    .search input[type="search"] {
+        width: 0;
+        padding: 0;
+        visibility: hidden;
+        transition: 
+            width .3s ease-out .1s,
+            padding .3s ease-out .1s,
+            visibility 0s ease-out .4s;
+    }
+
+    .search input[type="search"].visible {
+        width: 12rem;
+        padding: 0 1em;
+        visibility: visible;
+        transition: 
+            width .3s ease-in,
+            padding .3s ease-in;
+    }
+
+    .search input[type="submit"] {
+        width: 0;
+        visibility: hidden;
+        transform-origin: top left;
+        transform: scaleX(-1);
+        transition: 
+            width .3s ease-in .1s,
+            transform .2s ease-in,
+            visibility 0s ease-in .2s;
+    }
+
+    .search input[type="submit"].visible {
+        width: 6rem;
+        visibility: visible;
+        transform: scaleX(1);
+        transition: 
+            width .3s ease-out,
+            transform .2s ease-out .3s,
+            visibility 0s ease-out .3s;
+    }
+}

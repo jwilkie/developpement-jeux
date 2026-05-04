@@ -1,0 +1,15 @@
+.key {
+    background-color: var(--key-bg-color);
+    padding: 0 .2rem;
+    border-radius: 3px;
+    box-shadow: -1px 1px 0 1px var(--key-border-color);
+}
+
+.key img, .key svg {
+    display: inline-block; 
+    height: 0.8rem;
+    width: auto;
+    padding-top: 0.1rem;
+    vertical-align: baseline;
+    fill: var(--text-color);
+}

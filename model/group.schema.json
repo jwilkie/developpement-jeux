@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Group",
+    "description": "A group of the material in notes website.",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "description": "The schema used by this object.",
+            "type": "string"
+        },
+        "label": {
+            "description": "The label of the group, shown in the top menu of the website.",
+            "type": "string"
+        },
+        "title": {
+            "description": "The title of the group, shown in the group page.",
+            "type": "string"
+        },
+        "description": {
+            "description": "The description of this material group.",
+            "type": "string"
+        },
+        "noIndex": {
+            "description": "A value indicating whether the group should appear in the top menu of the website or not.",
+            "type": "boolean"
+        },
+        "noSection": {
+            "description": "A value indicating whether the group should contains it's own pages that aren't put in sections.",
+            "type": "boolean"
+        }
+    },
+    "required": ["label", "title", "description"],
+    "additionalProperties": false
+}

@@ -1,0 +1,15 @@
+.color {
+    position: relative;
+    margin-left: 1.25rem;
+    white-space: nowrap;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: -1.25rem;
+    transform: translate(0, -50%);
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid black;
+}

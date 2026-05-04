@@ -1,0 +1,12 @@
+.box {
+    padding: .5rem;
+    margin: 0 0 1rem;
+    border: 2px solid var(--colored-box-border-color);
+    background-color: var(--colored-box-bg-color);
+    color: var(--colored-box-text-color);
+}
+
+.box .heading {
+    margin: 0 0 .5rem;
+    font-weight: bold;
+}

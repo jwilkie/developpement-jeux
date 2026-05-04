@@ -1,0 +1,5 @@
+.box {
+    padding: .5rem;
+    font-style: italic;
+    border: 2px solid var(--bordered-box-border-color);
+}

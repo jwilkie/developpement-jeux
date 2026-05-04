@@ -1,0 +1,5 @@
+.inline {
+    font-family: monospace;
+    background-color: var(--inline-code-bg-color);
+    padding: 0 .3em;
+}

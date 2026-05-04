@@ -1,0 +1,44 @@
+.switch {
+    --switch-width: 3rem;
+    position: relative;
+    display: block;
+    margin: calc(var(--switch-width) / 10);
+    width: var(--switch-width);
+    height: calc(var(--switch-width) / 2);
+    border-radius: calc(var(--switch-width) / 2);
+    background-color: var(--switch-bg-color);
+    transform-origin: center left;
+}
+
+.switch .slider {
+    position: absolute;
+    content: "";
+    background-color: var(--switch-slider-bg-color);
+    height: calc(100% + var(--switch-width) / 10);
+    width: calc(100% / 2 + var(--switch-width) / 10);
+    border: .08em solid var(--switch-slider-border-color);
+    top: calc(var(--switch-width) / -20);
+    left: calc(var(--switch-width) / -20);
+    right: auto;
+    border-radius: 50%;
+    transition: left .4s;
+    cursor: pointer;
+}
+
+.switch input:checked + .slider {
+    left: calc(50%);
+}
+
+.switch input {
+    position: absolute;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+@media(min-width: 640px){
+    .switch {
+        --switch-width: 2rem;
+    }
+}

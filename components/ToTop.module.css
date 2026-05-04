@@ -1,0 +1,58 @@
+.container {
+    /* We add a container to push the button at the bottom of short pages 
+    before it goes out of the screen */
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: -2rem 0 2rem;
+    padding: 0 2rem 2px;
+    max-width: 60rem;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: var(--main-padding);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--to-top-bg-color);
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    box-shadow: 0 2px 0 #00000055;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid var(--to-top-text-color);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: .5rem;
+    transform: translateY(3px) rotate(-135deg);
+}
+
+.hidden {
+    transform: translateX(7rem);
+}
+
+.aside {
+    transform: translateX(7rem);
+}
+
+@media (min-width: 640px){
+    .aside {
+        transform: none;
+    }
+}
+
+@media (min-width: 960px){
+    .container {
+        grid-area: 3 / 2;
+    }
+}

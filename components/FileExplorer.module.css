@@ -1,0 +1,44 @@
+.container {
+    padding: 0.5rem 1rem 1rem 1rem;
+    border: 2px solid var(--file-explorer-border-color);
+    color: var(--file-explorer-text-color);
+    overflow: auto;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container .node {
+    margin: .5rem 0 0 0;
+}
+
+.node > div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.node > div > svg {
+    flex: 0 0 auto;
+    width: 1.3rem;
+    fill: var(--file-explorer-text-color);
+}
+
+.node > div > span {
+    flex: 1 0 auto;
+    white-space: nowrap;
+    padding: 0 .5rem 0 0;
+}
+
+.node > ul {
+    padding-left: 1.5rem;
+    border-left: 1px dashed var(--file-explorer-folder-color);
+}
+
+.highlight {
+    background-color: var(--file-explorer-highlight-color);
+    outline: 1px dashed var(--file-explorer-highlight-outline-color);
+}

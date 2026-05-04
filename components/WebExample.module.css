@@ -1,0 +1,15 @@
+.container {
+    margin: 0 0 1rem;
+}
+
+.container > div {
+    margin: 0;
+    min-height: calc(1.7rem + 2px);
+    border-bottom: none;
+}
+
+.container iframe {
+    width: 100%;
+    border: 2px solid var(--code-block-border-color);
+    background-color: #fff;
+}
