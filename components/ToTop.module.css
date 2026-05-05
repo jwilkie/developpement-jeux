@@ -19,22 +19,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 3rem;
     height: 3rem;
-    background-color: var(--to-top-bg-color);
+    padding: 0;
+    background-color: transparent;
     border: none;
-    border-radius: 50%;
     transition: transform 0.5s;
-    box-shadow: 0 2px 0 #00000055;
     cursor: pointer;
 }
 
-.arrow {
+.button svg {
+    position: absolute;
+    height: 100%;
+    fill: var(--to-top-bg-color);
+    filter: drop-shadow(0 2px 0 #00000055)
+}
+
+.button svg .fire {
+    display: none;
+}
+
+.button .arrow {
     border: solid var(--to-top-text-color);
-    border-width: 0 6px 6px 0;
+    border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: .5rem;
-    transform: translateY(3px) rotate(-135deg);
+    padding: 4px;
+    transform: translateY(-2px) rotate(-135deg);
+}
+
+.button:hover .fire {
+    display: block;
 }
 
 .hidden {

@@ -1,4 +1,4 @@
-import { Comfortaa, Montserrat, Open_Sans } from 'next/font/google'
+import { Comfortaa, Open_Sans, Silkscreen } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import Header from '@/components/Header'
 import Footer from '@/components//Footer'
@@ -20,9 +20,9 @@ const comfortaa = Comfortaa({
     variable: '--font-confortaa'
 });
 
-const montserrat = Montserrat({
+const montserrat = Silkscreen({
     subsets: ['latin'],
-    weight: ['400', '700'],
+    weight: ['400'],
     display: 'swap',
     variable: '--font-montserrat'
 });

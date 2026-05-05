@@ -1,8 +1,14 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 1",
-    "description": "Description de module",
+    "title": "Engin de jeu",
+    "description": "Présentation de l'engin de jeu Godot et du fonctionnement général d'un jeu vidéo du côté de la programmation informatique.",
     "pages": [
-        
+        "boucle-jeu",
+        "engin",
+        "projet",
+        "gdscript",
+        "affichage",
+        "deplacement",
+        "installation"
     ]
 }

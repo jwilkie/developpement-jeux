@@ -2,6 +2,7 @@
     "$schema": "../../../model/section.schema.json",
     "title": "Module 7",
     "description": "Description de module",
+    "disabled": true,
     "pages": [
         
     ]
