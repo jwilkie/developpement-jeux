@@ -1,6 +1,7 @@
 import vs from 'react-syntax-highlighter/dist/cjs/styles/prism/vs'
 import vsdark from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus'
 import gd from 'react-syntax-highlighter/dist/cjs/languages/prism/gdscript'
+import terminal from 'react-syntax-highlighter/dist/cjs/languages/prism/bash'
 
 const appConfig = {
     domain: 'https://jwilkie.github.io/developpement-jeux',
@@ -9,7 +10,8 @@ const appConfig = {
     sectionName: 'module',
     code: {
         languages: {
-            'gd': { tag: 'GDScript', renderer: gd }
+            'gd': { tag: 'GDScript', renderer: gd },
+            'terminal': { tag: 'Terminal', renderer: terminal }
         },
         themes: {
             light: vs,

@@ -5,10 +5,10 @@
     "pages": [
         "boucle-jeu",
         "engin",
-        "projet",
         "gdscript",
         "affichage",
         "deplacement",
-        "installation"
+        "installation",
+        "projet"
     ]
 }
