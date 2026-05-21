@@ -9,7 +9,7 @@
     height: 5.6em;
     background-color: var(--bubble-bg-color);
     border-radius: 50%;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-silkscreen);
     color: var(--bubble-text-color);
 }
 

@@ -20,11 +20,11 @@ const comfortaa = Comfortaa({
     variable: '--font-confortaa'
 });
 
-const montserrat = Silkscreen({
+const silkscreen = Silkscreen({
     subsets: ['latin'],
     weight: ['400'],
     display: 'swap',
-    variable: '--font-montserrat'
+    variable: '--font-silkscreen'
 });
 
 const opensans = Open_Sans({
@@ -63,7 +63,7 @@ export default async function RootLayout({ children }) {
     let sections = await getSections();
     let groups = await getGroups();
 
-    return <html lang="fr" className={`${comfortaa.variable} ${montserrat.variable} ${opensans.variable}`} suppressHydrationWarning>
+    return <html lang="fr" className={`${comfortaa.variable} ${silkscreen.variable} ${opensans.variable}`} suppressHydrationWarning>
         <body className={styles.layout}>
             <ThemeProvider>
                 <Header groups={groups} />

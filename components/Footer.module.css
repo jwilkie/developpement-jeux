@@ -6,7 +6,7 @@
     padding: 2rem;
     background-image: linear-gradient(to bottom, var(--bg-accent-gradient-color), var(--bg-accent-color) 30%);
     color: var(--text-inverted-color);
-    font-family: var(--font-montserrat);
+    font-family: var(--font-silkscreen);
     font-size: 1rem;
 }
 

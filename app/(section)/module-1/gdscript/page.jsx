@@ -26,6 +26,54 @@ const funcParam =
     var somme := nombre1 + nombre2
     return somme`;
 
+const condition = 
+`if score >= 100:
+    print("Félicitations, vous avez obtenu un score élevé!")`;
+
+const conditionElse =
+`if vitesse > 0.5:
+    print("Vous allez trop vite!")
+else:
+    print("Votre vitesse est acceptable.")`;
+
+const conditionMultiple = 
+`if energie <= 0:
+    print("Votre énergie est épuisée!")
+elif energie <= 20:
+    print("Votre énergie est faible!")
+else:
+    print("Votre énergie est suffisante!")`;
+
+const ternaire = 
+`couleur_energie = Color("#FF0000") if energie <= 20 else Color("#00FF00")`;
+
+const boucleWhile =
+`var i := 0
+while i < 10:
+    print(i)`;
+
+const boucleFor =
+`var enemies := ["gobelin", "orc", "troll"]
+for enemy in enemies:
+    print(enemy)`;
+
+const boucleForIndex = 
+`var enemies := ["gobelin", "orc", "troll"]
+for i in enemies.size():
+    print(enemies[i])`;
+
+const boucleBreakContinue = 
+`for i in projectiles.size(): 
+    if projectile[i].est_invisible:
+        continue
+    
+    if i > 100:
+        break`;
+
+const pass =
+`func fonction_non_implemente() -> void:
+    pass`;
+
 export default function Page() {
     return <>
         <section>
@@ -241,8 +289,9 @@ export default function Page() {
                 Vous avez probablement aussi remarqué que la déclaration de la fonction inclut une annotation de type pour le type de retour 
                 de la fonction. En effet, l'opérateur <IC>{'->'}</IC> est utilisé pour spécifier le type de retour d'une fonction. Dans
                 l'exemple précédent, la fonction <IC>bienvenue</IC> ne retourne aucune valeur, c'est pourquoi nous avons spécifié le type de
-                retour <IC>void</IC>. Si une fonction retourne une valeur, nous devons la spécifier. Par exemple, si nous avons une fonction 
-                qui retourne une chaîne de caractères, nous pouvons la déclarer de la façon suivante:
+                retour <IC>void</IC>. Si une fonction retourne une valeur, nous devons la spécifier après l'opérateur <IC>{'->'}</IC> et de 
+                mettre une instruction <IC>return</IC> spécifiant la valeur à retourner. Par exemple, si nous avons une fonction qui 
+                retourne une chaîne de caractères, nous pouvons la déclarer de la façon suivante:
             </p>
             <CodeBlock language="gdscript">{funcReturn}</CodeBlock>
             <p>
@@ -255,30 +304,106 @@ export default function Page() {
         </section>
 
         <section>
-            <h2>Structure de contrôle</h2>
+            <h2>Conditions</h2>
             <p>
-
+                Les conditions sont les structures de contrôle de flux qui permettent d'exécuter du code de manière conditionnelle en 
+                fonction de l'évaluation d'une expression booléenne. C'est le <IC>if</IC>. En GDScript, la syntaxe d'une condition est la
+                suivante:
             </p>
+            <CodeBlock language="gdscript">{condition}</CodeBlock>
+            <p>
+                Si vous voulez ajouter une condition alternative, vous pouvez utiliser le mot-clé <IC>else</IC> de la façon suivante:
+            </p>
+            <CodeBlock language="gdscript">{conditionElse}</CodeBlock>
+            <p>
+                Si vous avez plusieurs conditions alternatives, c'est le mot-clé <IC>elif</IC> qui vous permettra d'ajouter les conditions
+                du milieu. Par exemple:
+            </p>
+            <CodeBlock language="gdscript">{conditionMultiple}</CodeBlock>
+            <p>
+                Finalement, il est aussi possible d'écrire une condition sur une seule ligne en utilisant l'opérateur ternaire. Par 
+                exemple:
+            </p>
+            <CodeBlock language="gdscript">{ternaire}</CodeBlock>
         </section>
 
         <section>
-            <h2>Mot-clé réservés</h2>
+            <h2>Boucles</h2>
             <p>
-
+                Les boucles sont utilisées pour exécuter un bloc de code plusieurs fois. En GDScript, il existe deux types de boucles: la
+                boucle <IC>for</IC> et la boucle <IC>while</IC>. La boucle <IC>while</IC> s'exécute tant qu'une condition est vraie de la 
+                façon suivante:
             </p>
+            <CodeBlock language="gdscript">{boucleWhile}</CodeBlock>
+            <p>
+                La boucle <IC>for</IC>, quant à elle, s'exécute pour chaque élément d'une séquence ou d'un intervalle. Elle est l'équivalent
+                de la boucle <IC>foreach</IC> dans d'autres langages de programmation. Par exemple, pour itérer sur les éléments d'un 
+                tableau, nous pouvons utiliser la boucle <IC>for</IC> de la façon suivante:
+            </p>
+            <CodeBlock language="gdscript">{boucleFor}</CodeBlock>
+            <p>
+                Si vous avez besoin d'itérer sur les éléments d'un tableau en utilisant leur index, vous pouvez utiliser la 
+                fonction <IC>size()</IC> du tableau pour obtenir le nombre d'éléments dans le tableau et itérer sur les indices de la façon
+                suivante:
+            </p>
+            <CodeBlock language="gdscript">{boucleForIndex}</CodeBlock>
+            <p>
+                Comme pour les autres langages de programmation, il est possible d'utiliser les 
+                mots-clés <IC>break</IC> et <IC>continue</IC> pour contrôler le flux d'exécution d'une boucle. Le mot-clé <IC>break</IC> vous 
+                permet de sortir complètement d'une boucle, tandis que le mot-clé <IC>continue</IC> vous permet de passer à l'itération 
+                suivante de la boucle sans exécuter le reste du code dans l'itération courante.
+            </p>
+            <CodeBlock language="gdscript">{boucleBreakContinue}</CodeBlock>
+        </section>
+
+        <section>
+            <h2>Mot-clé pass</h2>
+            <p>
+                Certains mots-clés sont réservés en GDScript et ne peuvent pas être utilisés comme noms de variables ou de fonctions 
+                puisqu'ils ont une signification particulière dans le langage. C'est le cas de mot-clé déjà vu 
+                comme <IC>var</IC>, <IC>func</IC>, <IC>if</IC>, <IC>while</IC>, <IC>break</IC>, <IC>continue</IC>, etc. Un autre mot-clé
+                réservé en GDScript est le mot-clé <IC>pass</IC>. Il s'agit d'une instruction qui ne fait rien. Puisque le GDScript utilise
+                l'indentation pour délimiter les blocs de code, si vous écrivez un bloc de code vide, le langage va mettre des erreurs de 
+                syntaxe puisque le bloc de code doit contenir au moins une instruction. C'est là que le mot-clé <IC>pass</IC> entre en jeu.
+                En utilisant le mot-clé <IC>pass</IC>, vous pouvez créer un bloc de code qui ne fait rien, mais avec une instruction.
+            </p>
+            <CodeBlock language="gdscript">{pass}</CodeBlock>
+            <ColoredBox title="Attention: ">
+                Pendant le développement , il est possible d'avoir des blocs de code vides que vous n'avez pas encore implémentés. Toutefois,
+                ceux-ci devraient être temporaire. Vous ne devriez pas laisser des blocs de code vides dans votre projet final.
+            </ColoredBox>
         </section>
 
         <section>
             <h2>Opérateurs</h2>
             <p>
-
-            </p>    
+                Les opérateurs du langage GDScript sont essentiellement les mêmes que ceux des autres langages de programmation que vous 
+                avez appris jusqu'à présent. Le seul qui sera peut-être différent pour vous est l'opérateur d'assignation de
+                type (<IC>:=</IC>) que nous avons vu précédemment et l'opérateur de transmutation de type, de <em>casting</em> (<IC>as</IC>).
+            </p>
+            <p>
+                La liste complète des opérateurs de GDScript est disponible dans la documentation officielle du langage. Vous pouvez la 
+                consulter au lien ci-dessous pour plus d'information.    
+            </p> 
+            <p>
+                <a target="_blank" href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html#operators">
+                    GDScript reference - Operators
+                </a>
+            </p>
         </section>
 
         <section>
             <h2>Références</h2>
             <p>
-
+                Le langage GDScript devrait être relativement facile à apprendre pour vous. Ceci étant dit, si un élément vous échappe ou 
+                si vous essayer de faire quelque chose et que vous ne savez pas comment faire, n'hésitez pas à consulter la documentation 
+                officielle du langage. Elle est très complète et contient de nombreux exemples qui vous seront très utiles. Vous pouvez
+                la consulter au lien ci-dessous.
+            </p>
+            <p>
+                <a target="_blank" href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html">
+                    GDScript reference - Basics
+                </a>
             </p>
         </section>
     </>;

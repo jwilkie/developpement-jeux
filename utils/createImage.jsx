@@ -45,12 +45,8 @@ export async function createOGImage(subTitle, pageTitle, theme) {
         theme
     );
 
-    const openSans = await readFile(
-        join(process.cwd(), 'assets/OpenSans-Regular.ttf')
-    )
-
-    const openSansBold = await readFile(
-        join(process.cwd(), 'assets/OpenSans-Bold.ttf')
+    const silkscreen = await readFile(
+        join(process.cwd(), 'assets/Silkscreen-Regular.ttf')
     )
 
     return new ImageResponse(
@@ -96,16 +92,10 @@ export async function createOGImage(subTitle, pageTitle, theme) {
             height: 630,
             fonts: [
                 {
-                    name: 'OpenSans',
-                    data: openSans,
+                    name: 'Silkscreen',
+                    data: silkscreen,
                     style: 'normal',
                     weight: 400
-                },
-                {
-                    name: 'OpenSans',
-                    data: openSansBold,
-                    style: 'normal',
-                    weight: 700
                 }
             ]
         }

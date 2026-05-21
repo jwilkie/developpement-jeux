@@ -1,9 +1,13 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 2",
-    "description": "Description de module",
-    "disabled": true,
+    "title": "Collisions et Signaux",
+    "description": "Démonstration de différentes techniques de détection de collisions entre les éléments d'un jeu vidéo et des différentes façons de partager l'information avec les signaux.",
     "pages": [
-        
+        "types",
+        "rectangle",
+        "area",
+        "scene",
+        "signal",
+        "timer"
     ]
 }
