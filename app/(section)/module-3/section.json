@@ -1,9 +1,12 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 3",
-    "description": "Description de module",
-    "disabled": true,
+    "title": "Instanciation et plus de collisions",
+    "description": "Présentation de l'instanciation dynamique de node ainsi que d'éléments utile pour bonifier notre travail avec les collisions.",
     "pages": [
-        
+        "instance",
+        "close",
+        "layers-collision",
+        "disable-collision",
+        "optimize-node"
     ]
 }
