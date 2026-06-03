@@ -7,7 +7,7 @@ import ColoredBox from '@/components/ColoredBox';
  */
 export const metadata = {
     title: "Fermeture du jeu",
-    description: "",
+    description: "Présentation de l'instruction de code permettant de fermer un jeu créé avec Godot correctement",
     keywords: ["exit", "fermer", "quit", "get_tree"],
     group: "notes"
 }

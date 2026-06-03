@@ -1,9 +1,10 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 4",
-    "description": "Description de module",
-    "disabled": true,
+    "title": "Transitions et animations",
+    "description": "Une vue rapide de différentes techniques pour animer notre jeu, comme les transitions de propriétés, les spritesheets ou les transitions directement dans le code.",
     "pages": [
-        
+        "spritesheet",
+        "code",
+        "tween"
     ]
 }
