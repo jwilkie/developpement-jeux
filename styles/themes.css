@@ -49,6 +49,9 @@
     --card-border-color: #f78f20;
     --card-hover-bg-color: #faa754;
     --card-filter-border-color: #6d6a62;
+    --gallery-caption-bg-color: #faa754;
+    --gallery-caption-text-color: #222;
+    --gallery-image-bg-color: #000;
 }
 
 [data-theme='dark'] {
@@ -102,4 +105,7 @@
     --card-border-color: #eb5539;
     --card-hover-bg-color: #f3734e;
     --card-filter-border-color: #6d6a62;
+    --gallery-caption-bg-color: #eb5539;
+    --gallery-caption-text-color: #fff;
+    --gallery-image-bg-color: #000;
 }
