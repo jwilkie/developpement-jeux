@@ -1,7 +1,7 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 9",
-    "description": "Description de module",
+    "title": "Menus et interface textuelle",
+    "description": "Démonstration de la création d'interface textuelle et de menus dans un jeu vidéo, tel que les menus de pause, de fin de partie et menu principal.",
     "disabled": true,
     "pages": [
         

@@ -1,9 +1,9 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 8",
-    "description": "Description de module",
+    "title": "Multiniveau et sauvegarde",
+    "description": "Présentation de la création de multiple niveaux dans un jeu vidéo, du changement entre ceux-ci ainsi que de la gestion des sauvegardes.",
     "disabled": true,
     "pages": [
-        
+
     ]
 }

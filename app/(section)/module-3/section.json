@@ -1,12 +1,10 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Instanciation et plus de collisions",
-    "description": "Présentation de l'instanciation dynamique de node ainsi que d'éléments utile pour bonifier notre travail avec les collisions.",
+    "title": "Jeu à défilement latéral",
+    "description": "Présentation des jeux à défilement latéral utilisant une constante de gravité ainsi que l'utilisation des signaux.",
     "pages": [
-        "instance",
-        "close",
-        "layers-collision",
-        "disable-collision",
+        "signal",
         "optimize-node"
-    ]
+    ],
+    "disabled": true
 }

@@ -1,7 +1,7 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 7",
-    "description": "Description de module",
+    "title": "Collisions spécialisées",
+    "description": "Présentation de différentes techniques de détection de collisions qui permettent de créer des interactions plus complexes avec des animations entre les éléments d'un jeu vidéo.",
     "disabled": true,
     "pages": [
         

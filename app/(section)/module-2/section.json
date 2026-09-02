@@ -1,13 +1,16 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Collisions et Signaux",
-    "description": "Démonstration de différentes techniques de détection de collisions entre les éléments d'un jeu vidéo et des différentes façons de partager l'information avec les signaux.",
+    "title": "Collisions et instanciation",
+    "description": "Démonstration de différentes techniques de détection de collisions entre les éléments d'un jeu vidéo et l'instanciation dynamique d'éléments de jeu.",
     "pages": [
         "types",
         "rectangle",
         "area",
         "scene",
-        "signal",
-        "timer"
+        "timer",
+        "disable-collision",
+        "layers-collision",
+        "close",
+        "instance"
     ]
 }

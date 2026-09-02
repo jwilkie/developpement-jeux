@@ -1,7 +1,7 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 11",
-    "description": "Description de module",
+    "title": "Effet sonore et musique",
+    "description": "Démonstration de l'utilisation de sons et de musique dans un jeu vidéo pour améliorer l'atmosphère et l'expérience utilisateur.",
     "disabled": true,
     "pages": [
         

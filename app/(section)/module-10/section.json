@@ -1,9 +1,9 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Module 10",
-    "description": "Description de module",
-    "disabled": true,
+    "title": "Particules",
+    "description": "Démonstration de l'utilisation de particules en 2 dimensions accélérer par le processeur graphique pour créer différents effets visuels dans un jeu vidéo.",
     "pages": [
-        
+        "emetteur",
+        "comportement"
     ]
 }
