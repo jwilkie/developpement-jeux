@@ -3,8 +3,10 @@
     "title": "Jeu à défilement latéral",
     "description": "Présentation des jeux à défilement latéral utilisant une constante de gravité ainsi que l'utilisation des signaux.",
     "pages": [
+        "char-gravity",
+        "physics",
+        "camera",
         "signal",
         "optimize-node"
-    ],
-    "disabled": true
+    ]
 }
