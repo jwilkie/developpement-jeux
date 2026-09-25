@@ -2,8 +2,11 @@
     "$schema": "../../../model/section.schema.json",
     "title": "Carte de tuile et palette",
     "description": "Présentation de l'utilisation de palettes de tuiles pour créer des cartes d'environnement complexe efficace et facile à modifier dans un jeu vidéo.",
-    "disabled": true,
     "pages": [
-        
+        "tiles",
+        "tileset",
+        "tilemap",
+        "tilemap-iso",
+        "node-tile"
     ]
 }
