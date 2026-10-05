@@ -2,8 +2,9 @@
     "$schema": "../../../model/section.schema.json",
     "title": "Contrôle automatisé",
     "description": "Démonstration de l'utilisation de scripts pour déplacer automatiquement des éléments dans un jeu vidéo, comme des ennemis. Introduction aux algorithmes de recherche de chemin et à l'utilisation de la navigation dans un jeu vidéo.",
-    "disabled": true,
     "pages": [
-        
+        "path-finding",
+        "navigation-area",
+        "agent"
     ]
 }
