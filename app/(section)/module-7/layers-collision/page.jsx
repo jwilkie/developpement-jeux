@@ -1,5 +1,8 @@
 import IC from '@/components/InlineCode'
 
+import collisionLayers from '@/public/img/collision-layers.png'
+import Image from 'next/image';
+
 /**
  * @type {import("next").Metadata}
  */
@@ -22,9 +25,12 @@ export default function Page() {
             </p>
             <p>
                 Pour avoir accès aux <em>collision layers</em>, nous devons préalablement avoir des objets qui les utilisent. Dans un jeu 
-                2D, les nodes <IC>Area2D</IC> y ont accès, mais aussi d'autres, 
-                comme <IC>CharacterBody2D</IC>, <IC>RigidBody2D</IC> ou <IC>StaticBody2D</IC> que nous verrons plus tard. Voici comment les
-                trouver:
+                2D, les nodes <IC>Area2D</IC>, <IC>CharacterBody2D</IC>, <IC>RigidBody2D</IC> ou <IC>StaticBody2D</IC> que nous
+                avons vu jusqu'à maintenant peuvent les utiliser. De plus les Tilesets avec des collisions peuvent aussi utiliser ces 
+                couches.
+            </p>
+            <p>
+                Voici comment les trouver:
             </p>
             <ol>
                 <li>
@@ -39,6 +45,7 @@ export default function Page() {
                     Vous y verrez ici 2 listes de contrôle pour les collisions: les "<em>Layer</em>" et les "<em>Mask</em>".
                 </li>
             </ol>
+            <Image src={collisionLayers} alt="Couches de collision et masques dans l'inspecteur de propriétés" />
         </section>
 
         <section>

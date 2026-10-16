@@ -9,7 +9,6 @@
         "scene",
         "timer",
         "disable-collision",
-        "layers-collision",
         "close",
         "instance"
     ]
