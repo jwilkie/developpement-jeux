@@ -1,9 +1,9 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Menus et interface textuelle",
-    "description": "Démonstration de la création d'interface textuelle et de menus dans un jeu vidéo, tel que les menus de pause, de fin de partie et menu principal.",
+    "title": "Multiniveau et sauvegarde",
+    "description": "Présentation de la création de multiple niveaux dans un jeu vidéo, du changement entre ceux-ci ainsi que de la gestion des sauvegardes.",
     "disabled": true,
     "pages": [
-        
+
     ]
 }

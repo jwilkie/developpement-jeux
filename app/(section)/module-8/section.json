@@ -1,7 +1,7 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Multiniveau et sauvegarde",
-    "description": "Présentation de la création de multiple niveaux dans un jeu vidéo, du changement entre ceux-ci ainsi que de la gestion des sauvegardes.",
+    "title": "Exporter un projet",
+    "description": "Présentation de l'exportation d'un projet pour créer un exécutable du jeu vers une plateforme spécifique.",
     "disabled": true,
     "pages": [
 

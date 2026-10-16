@@ -1,9 +1,9 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Particules",
-    "description": "Démonstration de l'utilisation de particules en 2 dimensions accélérer par le processeur graphique pour créer différents effets visuels dans un jeu vidéo.",
+    "title": "Menus et interface textuelle",
+    "description": "Démonstration de la création d'interface textuelle et de menus dans un jeu vidéo, tel que les menus de pause, de fin de partie et menu principal.",
+    "disabled": true,
     "pages": [
-        "emetteur",
-        "comportement"
+        
     ]
 }
