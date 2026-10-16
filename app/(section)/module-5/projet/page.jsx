@@ -84,58 +84,6 @@ export default function Page() {
         </section>
 
         <section>
-            <h2>Évaluation</h2>
-            <p>
-                Votre projet de jeu sera évalué en fonction des critères suivants:
-            </p>
-            <OverflowContainer>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Critère</th>
-                            <th>Description</th>
-                            <th>Pondération</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Respect du GDD et des indications du professeur</td>
-                            <td>
-                                Le jeu respecte toutes les caractéristiques demandées par le professeur et respecte les éléments définis
-                                dans votre document de design de jeu (GDD).
-                            </td>
-                            <td>30%</td>
-                        </tr>
-                        <tr>
-                            <td>Qualité technique</td>
-                            <td>
-                                Le jeu fonctionne correctement sans bugs majeurs et utilise les concepts vus dans les modules de manière 
-                                appropriée.
-                            </td>
-                            <td>20%</td>
-                        </tr>
-                        <tr>
-                            <td>Bonnes pratiques de développement</td>
-                            <td>
-                                Le projet est bien structuré, les nodes sont organisés de manière logique et les scripts sont bien 
-                                commentés et lisibles.
-                            </td>
-                            <td>20%</td>
-                        </tr>
-                        <tr>
-                            <td>Méthodologie de développement</td>
-                            <td>
-                                Le projet est développé de manière itérative, avec du travail fait à chaque semaine bien visible dans le
-                                répertoire GitHub du projet. Les tâches sont bien définies et bien mises à jour dans un projet sur GitHub.
-                            </td>
-                            <td>30%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </OverflowContainer>
-        </section>
-
-        <section>
             <h2>Configuration du répertoire GitHub</h2>
             <p>
                 Pour cette première partie du projet, vous devez créer un répertoire GitHub pour votre projet de jeu. Ce répertoire
@@ -198,6 +146,68 @@ export default function Page() {
                 votre projet pour Windows pour qu'il puisse être testé par le professeur. Ce release doit être disponible sur GitHub avant
                 la date limite de remise. Le professeur pourrait pénaliser les équipes ayant créer un <em>release</em> après la date limite
                 de remise.
+            </p>
+        </section>
+
+        <section>
+            <h2>Pondération et évaluation</h2>
+            <p>
+                Votre projet de jeu sera évalué en fonction des critères suivants:
+            </p>
+            <OverflowContainer>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Critère</th>
+                            <th>Description</th>
+                            <th>Pondération</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Respect du GDD et des indications du professeur</td>
+                            <td>
+                                Le jeu respecte toutes les caractéristiques demandées par le professeur et respecte les éléments définis
+                                dans votre document de design de jeu (GDD).
+                            </td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>Qualité technique</td>
+                            <td>
+                                Le jeu fonctionne correctement sans bugs majeurs et utilise les concepts vus dans les modules de manière 
+                                appropriée.
+                            </td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Bonnes pratiques de développement</td>
+                            <td>
+                                Le projet est bien structuré, les nodes sont organisés de manière logique et les scripts sont bien 
+                                commentés et lisibles.
+                            </td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Méthodologie de développement</td>
+                            <td>
+                                Le projet est développé de manière itérative, avec du travail fait à chaque semaine bien visible dans le
+                                répertoire GitHub du projet. Les tâches sont bien définies et bien mises à jour dans un projet sur GitHub.
+                            </td>
+                            <td>30%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </OverflowContainer>
+            <p>
+                L'évaluation du projet se fera durant chaque classe, à la fin de la période. Cela permettra au professeur de voir 
+                l'avancement de votre projet et de vous donner des rétroactions pour améliorer votre projet avant la remise finale. 
+                Assurez-vous donc qu'au moins un membre de votre équipe soit présent à chaque classe pour présenter l'avancement de votre
+                projet. Les équipes qui ne présenteront pas leur projet durant les classes seront pénalisées dans l'évaluation de leur
+                projet.
+            </p>
+            <p>
+                Le professeur va aussi évaluer l'exécutable de votre projet une fois que vous aurez fait votre remise sur GitHub.
             </p>
         </section>
     </>;
