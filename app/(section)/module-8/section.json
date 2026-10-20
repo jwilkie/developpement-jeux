@@ -2,8 +2,8 @@
     "$schema": "../../../model/section.schema.json",
     "title": "Exporter un projet",
     "description": "Présentation de l'exportation d'un projet pour créer un exécutable du jeu vers une plateforme spécifique.",
-    "disabled": true,
     "pages": [
-
+        "install",
+        "export"
     ]
 }
