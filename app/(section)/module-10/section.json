@@ -1,9 +1,9 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Menus et interface textuelle",
-    "description": "Démonstration de la création d'interface textuelle et de menus dans un jeu vidéo, tel que les menus de pause, de fin de partie et menu principal.",
-    "disabled": true,
+    "title": "Menus et interface graphiques",
+    "description": "Démonstration de la création d'interfaces graphiques et de menus dans un jeu vidéo, tel que les menus de pause, de fin de partie et menus principal.",
     "pages": [
-        
+        "composants",
+        "organisation"
     ]
 }
